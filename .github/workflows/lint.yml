@@ -9,7 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest]
-        node-version: [12]
+        node-version: [10, 12, 14]
     steps:
       - uses: actions/checkout@v2
 
