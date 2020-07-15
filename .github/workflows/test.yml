@@ -9,8 +9,8 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, windows-latest, macOS-latest]
-        python-version: [3.6, 3.7, 3.8]
-        node-version: [10, 12, 14]
+        python-version: [3.6]
+        node-version: [12]
     steps:
       - uses: actions/checkout@v2
 
@@ -38,6 +38,7 @@ jobs:
         env:
           LC_ALL: C.UTF-8
           LANG: C.UTF-8
+          PYTHON_VERSION: ${{ matrix.python-version }}
         if: matrix.os != 'macOS-latest'
 
       - name: Test (Mac)
@@ -45,4 +46,5 @@ jobs:
         env:
           LC_ALL: en_US.UTF-8
           LANG: en_US.UTF-8
+          PYTHON_VERSION: ${{ matrix.python-version }}
         if: matrix.os == 'macOS-latest'

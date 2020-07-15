@@ -6,12 +6,12 @@ authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.6"
-Flask = "^1.0"
-bottle = {git = "https://git@github.com/bottlepy/bottle.git", tag = "0.12.16"}
-boto3 = "^1.9"
+Flask = "^1.1"
+bottle = {git = "https://git@github.com/bottlepy/bottle.git", tag = "0.12.18"}
+boto3 = "^1.14"
 
 [tool.poetry.dev-dependencies]
 
 [build-system]
-requires = ["poetry>=0.12"]
+requires = ["poetry>=1.0"]
 build-backend = "poetry.masonry.api"
