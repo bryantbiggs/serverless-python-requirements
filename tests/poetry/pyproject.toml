@@ -5,8 +5,7 @@ description = ""
 authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.6"
-Flask = "^1.1"
+Flask = "*"
 bottle = {git = "https://git@github.com/bottlepy/bottle.git", tag = "0.12.18"}
 boto3 = "^1.14"
 
